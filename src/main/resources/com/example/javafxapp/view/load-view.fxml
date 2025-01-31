@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="452.0" prefWidth="728.0" style="-fx-background-color: BD7A33FF;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxapp.controller.LoadViewController">
+   <children>
+      <Label layoutX="291.0" layoutY="25.0" prefHeight="36.0" prefWidth="115.0" text="Load ALL" textFill="#f8f1f1">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <TableView fx:id="tblView" layoutX="14.0" layoutY="117.0" prefHeight="200.0" prefWidth="695.0">
+        <columns>
+          <TableColumn prefWidth="228.0" text="Brand" />
+            <TableColumn prefWidth="182.0" text="Model" />
+            <TableColumn prefWidth="117.0" text="QTY" />
+            <TableColumn prefWidth="167.0" text="Price" />
+        </columns>
+      </TableView>
+      <Button layoutX="533.0" layoutY="372.0" mnemonicParsing="false" onAction="#back" prefHeight="36.0" prefWidth="83.0" style="-fx-background-color: red;" text="Back" textFill="#fffdfd">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
